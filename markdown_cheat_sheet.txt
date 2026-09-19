@@ -1,0 +1,119 @@
+MARKDOWN CHEAT SHEET
+
+HEADINGS
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+
+
+TEXT FORMATTING
+**bold**
+*italic*
+***bold and italic***
+~~strikethrough~~
+
+
+BULLET LISTS
+- Bullet
+- Another bullet
+  - Nested bullet
+  - Nested bullet
+
+
+NUMBERED LISTS
+1. First
+2. Second
+3. Third
+
+
+CHECKBOXES
+- [ ] Not done
+- [x] Done
+
+
+QUOTES
+> This is a quote
+
+
+INLINE CODE
+`inline code`
+
+
+CODE BLOCKS
+```python
+def hello():
+    print("Hello")
+```
+
+
+LINKS
+[Google](https://google.com)
+
+
+IMAGES
+![Description](image.png)
+
+
+HORIZONTAL DIVIDER
+---
+
+
+TABLES
+| Topic | Status | Notes |
+|------|------|------|
+| Locks | Done | Review Peterson |
+| Semaphores | TODO | Practice problems |
+
+
+ESCAPING SPECIAL CHARACTERS
+\*not italic\*
+\# not a heading
+
+
+PARAGRAPHS / LINE BREAKS
+Paragraph one.
+
+Paragraph two.
+
+
+CS NOTES TEMPLATE
+
+# Topic Name
+
+## Definition
+
+Short explanation here.
+
+## Key Ideas
+
+- Idea 1
+- Idea 2
+- Idea 3
+
+## Example
+
+```python
+example_code()
+```
+
+## Important
+
+> Something I need to remember.
+
+## Questions
+
+- [ ] Question 1
+- [ ] Question 2
+
+## Summary
+
+- Main takeaway
+- Main takeaway
+
+
+VS CODE TIP
+On Mac: Cmd + Shift + V
+On Windows/Linux: Ctrl + Shift + V
+
+This opens the Markdown preview so you can see your notes formatted.

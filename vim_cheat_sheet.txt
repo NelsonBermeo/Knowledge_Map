@@ -1,0 +1,120 @@
+VIM CHEAT SHEET
+
+MODES
+i        Insert mode before cursor
+a        Insert mode after cursor
+I        Insert at beginning of line
+A        Insert at end of line
+o        Open new line below
+O        Open new line above
+Esc      Return to Normal mode
+
+MOVEMENT
+h        Move left
+j        Move down
+k        Move up
+l        Move right
+
+w        Jump to next word
+b        Jump to previous word
+e        Jump to end of word
+
+0        Start of line
+^        First non-space character
+$        End of line
+
+gg       Top of file
+G        Bottom of file
+
+Ctrl+f   Page down
+Ctrl+b   Page up
+
+EDITING
+x        Delete character under cursor
+dd       Delete current line
+D        Delete from cursor to end of line
+dw       Delete word
+
+yy       Copy current line
+yw       Copy word
+p        Paste after cursor
+P        Paste before cursor
+
+u        Undo
+Ctrl+r   Redo
+
+r        Replace one character
+R        Replace mode
+
+VISUAL MODE
+v        Visual mode
+V        Visual line mode
+Ctrl+v   Visual block mode
+
+After selecting:
+y        Copy selection
+d        Delete selection
+c        Change selection
+
+SEARCH
+/text    Search forward for "text"
+?text    Search backward for "text"
+n        Next match
+N        Previous match
+
+:%s/old/new/g
+Replace all occurrences of "old" with "new"
+
+:%s/old/new/gc
+Replace all occurrences and ask for confirmation
+
+FILES
+:w       Save file
+:q       Quit
+:wq      Save and quit
+:x       Save and quit
+:q!      Quit without saving
+
+:e file.txt
+Open another file
+
+SPLITS
+:split file.txt
+Horizontal split
+
+:vsplit file.txt
+Vertical split
+
+Ctrl+w h
+Move to left split
+
+Ctrl+w j
+Move to split below
+
+Ctrl+w k
+Move to split above
+
+Ctrl+w l
+Move to right split
+
+USEFUL COMBINATIONS
+ggVG     Select entire file
+gg=G     Auto-indent entire file
+ddp      Move current line down
+ddkP     Move current line up
+ciw      Change current word
+diw      Delete current word
+yiw      Copy current word
+
+NUMBERS
+5j       Move down 5 lines
+3dd      Delete 3 lines
+4yy      Copy 4 lines
+
+QUICK SURVIVAL GUIDE
+1. Press i to start typing.
+2. Press Esc when done typing.
+3. Type :w and press Enter to save.
+4. Type :q and press Enter to quit.
+5. Type :wq and press Enter to save and quit.
+6. Type :q! and press Enter to quit without saving.
