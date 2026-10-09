@@ -1,6 +1,6 @@
 # Linear Algebra Operations
 
-**Eigen Values**
+**Eigenvalues**
 
 We can use numpy to find eigenvalues and vectors:
 

@@ -1,0 +1,1 @@
+**L2 Regularization** (also known as ridge regression or Tikhonov regularization) is a technique used in machine learning to prevent overfitting by adding a penalty proportional to the squared magnitude of the model's weights to the loss funciton. 
