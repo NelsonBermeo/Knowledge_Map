@@ -1,8 +1,21 @@
-### Homework 2 CS 511 -
+# Concurrent Programming Experience
+
+## Projects
+
+## Courses
+
+#### Stevens Institute of Technology - CS 511 - Concurrent Programming
+
+**Date:** Fall 2026
+**Description:** In Progress...
+
+## Assignments
+
+#### Homework 2 CS 511 -
 
 **Topics:** Thread Pools, Semaphores, Java Executor, CountDownLatch, ExecutorService
 
-**Description**
+**Description:**
 
 This homework was a fun assignment to work on and taught me about the practical use of sempahores.
 
@@ -11,5 +24,3 @@ The assignment was about managing shared resources in a bakery implemented in OO
 There was a main function that called Bakery's thread which created a thread pool and created threads for each customer. The bakery held semaphores to control each shelf and cashier.
 
 Very fun indeed!
-
-### ...

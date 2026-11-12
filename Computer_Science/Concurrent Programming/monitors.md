@@ -1,4 +1,8 @@
-Resources: CS 511 Slides and https://www.youtube.com/watch?v=ufdQ0GR855M
+# Monitors
+
+#### Introduction
+
+Resources: CS 511 Slides
 
 We have seen that semaphores are an efficient tool to solve synchronization problems.
 

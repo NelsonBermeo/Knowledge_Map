@@ -53,3 +53,44 @@ Benefits of using EBS are:
 
 - Data persists after instances are terminated
 - Automatically replicated within its avaliablity zone
+
+#### Creating a EBS Volume
+
+We can simply navigate to the EC2 dashboard and then on the left-hand side click Volumes under the EBS section and create with specific settings.
+
+#### Security for Cloud Servers
+
+Security in the cloud allows us to have complete control over our virtual networking enviornment. We can configure our virtual network with public or private facing subsets and launch servers in the selected netwrok to secure access.
+
+**VPC** allows us create our own private network in the cloud and we can launch our services inside it. This is done as a security measure.
+
+When we create an instance with EC2, a default VPC gets created for us. Alternatively we create our own custome VPC with user-defined subnets, route tables, internset gateways, and many other desirable configurations.
+
+Creating VPC & Internet Gateway Ex: https://www.youtube.com/watch?v=tIlcy1WYIRw&t=108s
+
+**Network Access Control Lists (ACLs)** define a set of firewall rules for controlling traffic coming in and out of subnets in the VPC.
+
+#### Compute Power in the Cloud & Lambda Functions
+
+Being able to run application code in the cloud without having to manage servers make development easier.
+
+**AWS Lambda** provides us with computing power in the cloud by allowing us to execute code without standing up or managing servers.
+
+Notes:
+
+- Lambdas have a time limit of 15 minutes
+- Lambda code can be triggered by other AWS services
+  - Like when things happen in the code base this lambda could run (I think). Examples include a file upload to AWS S3, DynamoDB inserts, or a reciept of an alert message from SNS.
+- AWS Lambda supports Java, PowerShell, Node.js, and others. For other languages, we can use custom runtimes.
+
+Creating a Lambda Function Ex: https://www.youtube.com/watch?v=MwykJta66l0
+
+Creating a Lambda Function with Triggers: https://www.youtube.com/watch?v=pGo3swI8-Vo&t=7s
+
+#### Elastic Beanstalk
+
+**Elastic Beanstalk** is an orchestration service that allows us to deploy web applications by provisioning all of the services that we need. It can set up an EC2 instance, auto-scaling, and an elastic load balancer and many more for you.
+
+Ex Setup: https://www.youtube.com/watch?v=bvVQsnBby-c&t=2s
+
+- I am not sure how the code that we write is connected to anything here.

@@ -1,16 +1,20 @@
+# Semaphores
+
 We understand what Semaphores are in simple behavior patterns like producing regular expressions, but how are they used in famous concurrency problems?
 
 ## Problem 1 - Dining Philosophers
 
-![alt text](/images/diningPhilosophersImage.png)
+#### Introduction
 
-**Resources:** CS 511 Slides AND https://www.youtube.com/watch?v=FYUi-u7UWgw
+![alt text](../../images/diningPhilosophersImage.png)
+
+**Resources:** CS 511 Slides
 
 **Problem Description:**
 
 There are 5 philosophers and 5 forks. Philosophers can be in either state: thinking or eating. In order to eat a subject needs 2 forks.
 
-The shared resources in this problem are the forks.
+The _shared resources_ in this problem are the forks.
 
 How can we let each philospher eat without deadlocks or starvation?
 
@@ -40,7 +44,7 @@ N.times {
 }
 ```
 
-This solution **deadlocks** because ...
+This solution _deadlocks_ because ...
 
 #### Counting Semaphore
 
@@ -71,7 +75,7 @@ N.times {
 }
 ```
 
-I don't see a problem with this solution regarding deadlock, but could there be an issue with starvation? ...
+I don't see a problem with this solution regarding deadlock, but could there be an issue with starvation?
 
 #### Breaking the Symmetry
 
@@ -106,6 +110,8 @@ N.times {
 ```
 
 ## Problem 2 - Producers/Consumers
+
+#### Introduction
 
 ![alt text](/images/producerConsumer.png)
 
@@ -239,6 +245,8 @@ end = 0;
 ```
 
 ## Problem 3 - Readers/Writers
+
+#### Introduction
 
 **Resources:** CS 511 Slides
 
