@@ -1,3 +1,5 @@
+# Introduction to Cloud Computing
+
 Course: Udacity - AWS Cloud Fundamentals
 Instructor - Kesha Williams
 
@@ -8,7 +10,7 @@ Cloud computing is the delivery of IT resources over the internet. The cloud is 
 - Analytics, artificial intelligence, augmented reality
 - Security services for data and applications
 
-**Benefits of Cloud Computing Include:**
+## **Benefits of Cloud Computing Include:**
 
 - Pay as you go: you pay only for what you use (avoiding huge capital investments)
 - Autoscaling: based on demand, active servers can grow or shrink
@@ -17,13 +19,13 @@ Cloud computing is the delivery of IT resources over the internet. The cloud is 
 - Scale globally to reduce latency with global servers and avaliablity zones
 - Backup accessibility for disaster recovery
 
-**Types of Cloud Computing:**
+## **Types of Cloud Computing:**
 
 - Infrastructure-as-a-Service (IaaS): a provider supplies virtual server instances, storage, and mechanisms for you to manage servers
 - Platform-as-a-Service (PaaS): a platform of development tools hosted on a provider's infrastructure.
 - Software-as-a-Service (SaaS): a software application that runs over the internet and is managed by the service provider
 
-**Types of Cloud Deployment Models:**
+## **Types of Cloud Deployment Models:**
 
 - Public Cloud: A public cloud makes compute, storage and application services avaliable over the internet for multiple customers. Public cloud providers operate shared, multi-tenant infrastructure. Examples: AWS, Azure, GCP (Google Cloud Platform)
 - Private Cloud: A private cloud provides infrastructure and services exlusively for a single organization. It can be hosted-on premises at organizations. Private clouds are often chosen for stronger control over security, compliance, and data residency.
@@ -36,8 +38,8 @@ Cloud computing is the delivery of IT resources over the internet. The cloud is 
 - Application Integration includes Simple Queue Service (SQS), Simple Notification Service (SNS)
 - And many many more...
 
-**Shared Responsibility Model**
+## **Shared Responsibility Model**
 
 Just because we use AWS services doesn't our side of the job is done. We are responsible for managing identity and access managment, encrypting data in the cloud, and more. AWS secures the cloud, hardware and optimization across large networks. Below is the shared responsibiliy model we follow while using AWS:
 
-![alt text](/images/awsSharedResponsibilityModel.png)
+![alt text](../../images/awsSharedResponsibilityModel.png)

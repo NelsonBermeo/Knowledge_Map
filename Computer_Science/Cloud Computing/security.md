@@ -4,17 +4,17 @@ We'll want to make sure our website and the servers our website runs on is prote
 
 We need security because we need to keep data (especially PII) secure, our applications secure, and more.
 
-#### AWS Web Application Firewall (WAF)
+## AWS Web Application Firewall (WAF)
 
 Provides a firewall that protects our applications. It's a network security mechanism that monirots and controls traffic based on preset rules.
 
 Can guard against SQL injection, cross-site scripting, reviewing data sent, and other well-known attacks.
 
-#### AWS Shield
+## AWS Shield
 
 A managed DDoS protection service that safe-guards AWS hosted applications. AWS shield is an out of the box free service that is always running.
 
-#### Identity and Access Management (IAM)
+## Identity and Access Management (IAM)
 
 We need to ensure confidentiality. **IAM** allows us to configure who can access our AWS account, services and applications in our account.
 
@@ -30,7 +30,7 @@ _IAM Policy to User:_ https://www.youtube.com/watch?v=v5-7mehiKgY
 
 The **IAM Identity Center** (successor to AWS SSO) provides a central place where you create or connect your workfoce identities in AWS once and manage access centrally to multiple AWS accounts and applications.
 
-#### Amazon Cognito
+## Amazon Cognito
 
 A service that offers authentication and authorizatoin features. It helps secure identity and access management for apps.
 

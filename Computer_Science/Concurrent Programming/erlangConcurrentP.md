@@ -1,4 +1,6 @@
-#### Introduction
+# Concurrent Programming in Erlang
+
+## Introduction
 
 Previously, we have looked at concurrent tools such as semaphores and monitors.
 
@@ -9,7 +11,7 @@ Well, the problem with monitors is that they are:
 - Highly centralized (un/blocking processes, maintaining queues, encapsulating data...)
 - And for modern, distributed architectures, there is a need for a less centralized solution
 
-#### Erlang's Concurrency System
+## Erlang's Concurrency System
 
 Erland consists of a number of distributed Erlang runtime systems communicating with each other (instances of the VM) ; Each such system is called a **node:**
 
@@ -26,7 +28,7 @@ nonode@nohost
 
 For the purposes of our concurrent course we will work within a unique Erlang runtime system, without assigning it a name.
 
-#### Processes and Communication in Erlang
+## Processes and Communication in Erlang
 
 A **process** is a node that has:
 
@@ -86,7 +88,7 @@ start() ->
     Pid ! stop. % then we stop the server
 ```
 
-**Reacting to Multiple Messages:**
+### **Reacting to Multiple Messages:**
 
 Erlang listens for messages from different senders. In which order will they be processed? Can we force an order? A recieve statement tries to find a match as early in the mailbox as it can. Here we are introducing the erlang concept: **selective recieve**.
 
@@ -128,4 +130,4 @@ We can also have **guards** or conditions on our recieves. (slide 24)
 
 We can have **timeouts** on recieves that take too long. (slide 25)
 
-#### Semaphore Exercise
+## Semaphore Exercise

@@ -1,10 +1,12 @@
-**Goals of understanding for homework 2:**
+# Neural Language Models
+
+## **Goals of understanding for homework 2:**
 
 - LSTM layers
 - GRU
 - SGD for optization
 
-#### Feedforward Neural Networks
+## Feedforward Neural Networks
 
 Before we had RNNs we used feedforward neural networks. These networks included disadvantages:
 
@@ -28,7 +30,7 @@ And disadvantages:
 - Each input x uses different rows of W, and this can't hold as we don't share weights across windows
 - We need a neural arch. that can process any length input
 
-#### Recurrent Neural Networks (RNNs)
+## Recurrent Neural Networks (RNNs)
 
 The **core idea** is that we apply the same weights W repeatedly.
 
@@ -55,7 +57,7 @@ _Note:_ Regardless of how many times we unroll our network, the weights and bias
 - The vanishing gradient. Here we have to constantly minimize a loss function which can lead our weight going to a very small steps and we'll never reach our optimal minmal.
 - Well damn, can we get around this at all? Yes my sweet supple child, we will explore a better RNN called Long Short-Term Memory NNs (LSTMs)...
 
-#### Long Short-Term Memory NNs (LSTMs)
+## Long Short-Term Memory NNs (LSTMs)
 
 The **main idea** of how LSTMs work is that it uses two paths to get to the output. 1 for long term memories and another for short term memories.
 

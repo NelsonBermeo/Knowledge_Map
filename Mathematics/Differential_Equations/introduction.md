@@ -1,6 +1,6 @@
-### Introduction to Differential Equations
+# Introduction to Differential Equations
 
-#### Numerical vs Functional Equations
+## Numerical vs Functional Equations
 
 **Numerical Equations** are equations with numerical solutions.
 
@@ -14,7 +14,7 @@ Ex: (f(x))^2 - 1 = 0.
 
 It's solution could be a function f(x) that always equals + or - 1. But many different functions fall into this category so there can be _infinite_ solutions.
 
-#### Differential Equation Characteristics
+## Differential Equation Characteristics
 
 A **differential equation** is a functional equation involving derivatives of the solution function.
 
@@ -50,17 +50,17 @@ The **characteristics** of a differential equation are type, order and linearity
 
   _Important Note:_ a coefficient like x^2 \* y' is still linear because it's okay for the indepdent variable x to appear nonlinearly.
 
-#### Examples of Differential Equations
+## Examples of Differential Equations
 
 Let's go over some simple equations:
 
-##### Ex 1:
+### Ex 1:
 
 dy/dx = 0
 
 Essentially, we are asking what funcionts y have derivatives zero? The answer is of course, constant functions. y = K for any constant K.
 
-##### Ex 2:
+### Ex 2:
 
 d^2y/dx^2 = 0
 
@@ -72,7 +72,7 @@ Here we are asking what functions y have a first derivative of K? The answer the
 
 _Note:_ See how there are two arbitrary constants, that is not a coincidence. A second-order differential equation often produces two constants.
 
-##### Ex 3:
+### Ex 3:
 
 dy/dx = y
 
@@ -80,11 +80,11 @@ Essentially, what function y has a first derivative of itself? Of course we know
 
 So our answer is y = C \* e^2
 
-##### Ex 4:
+### Ex 4:
 
 y'' + y = 0 ; and given a proposed solution: y = A _ cos(x) + B _ sin(x)
 
-Essentially, what function y adding it's second derivative and first derivative together gives us 0?
+Essentially, what function y adding it's second derivative and y together gives us 0?
 
 Now that we have a given solution, we'd have to double check if its alright.
 
@@ -98,4 +98,4 @@ y'' = (-) A _ cos(x) - B _ sin(x)
 
 Adding y'' and y together we get 0.
 
-##### Ex 5: Partial DE
+### Ex 5: Partial DE

@@ -1,0 +1,3 @@
+This section will be covering different problems related to Arrays and Hashing. 
+
+Prereqs for this would be dynamic arrays, hash usage, & prefix sums.

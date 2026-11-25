@@ -10,7 +10,7 @@ It's important to have visibility into our cloud applications to check:
 
 We'll need access to logging and auditing.
 
-#### AWS CloudTrail
+## AWS CloudTrail
 
 Records AWS API activity so that we can audit and investigate actions on our account. CloudTrail captures API calls in S3 buckets or CloudWatch logs from the AWS Management Console, AWS SDKs, and other AWS services and delivers logs for analysis and monitoring.
 
@@ -18,13 +18,13 @@ CloudTrail also have support for event types to know when things occur.
 
 _CloudTrail Ex:_ https://www.youtube.com/watch?v=YhjHUJ8Aq8Y
 
-#### AWS Cloud Watch
+## AWS Cloud Watch
 
 A service that monitors resources and applications that run on AWS by collecting data in the form of logs, metrics and events. It helps us observe, troubleshoot, and automate responses to operational issues.
 
 _CloudWatch and Amaazon EventBridge Ex:_ https://www.youtube.com/watch?v=nvqyem5IW2c
 
-#### Infrastructure as Code & CloudFormation
+## Infrastructure as Code & CloudFormation
 
 Allows us to describe and provision all the infrastructure resources in our cloud environment.
 

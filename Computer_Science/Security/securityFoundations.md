@@ -1,20 +1,22 @@
+# Security Foundations
+
 Here we will define several mathematical notations for understanding cybersecurity.
 
 First we will start with english meaning.
 
-### Basic Definitions
+## Basic Definitions
 
 **3 Basic Properties of security:**
 
-Confidentiality - can untrusted people read my resources
-Integrity - can untrusted people write to my resources
-Availability - can I use/access my resources
+- Confidentiality - can untrusted people read my resources
+- Integrity - can untrusted people write to my resources
+- Availability - can I use/access my resources
 
 Together these properties are called the CIA Triad.
 
 When we consider information systems in particular, we are also interested in 2 additional dimensions the Information States and the Security Measures in the McCumber Cube:
 
-![alt text](/images/mccumberCube.png)
+![alt text](../../images/mccumberCube.png)
 
 Information States:
 
@@ -28,7 +30,7 @@ Security Measures:
 - Policy and Practice
 - Education, Training, and Awareness
 
-**Policies vs. Mechanisms**
+## **Policies vs. Mechanisms**
 
 Security Policies are statements of what is and not allowed.
 

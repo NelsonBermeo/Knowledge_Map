@@ -4,7 +4,7 @@ We understand what Semaphores are in simple behavior patterns like producing reg
 
 ## Problem 1 - Dining Philosophers
 
-#### Introduction
+### Introduction
 
 ![alt text](../../images/diningPhilosophersImage.png)
 
@@ -18,7 +18,7 @@ The _shared resources_ in this problem are the forks.
 
 How can we let each philospher eat without deadlocks or starvation?
 
-#### Naive Attempt
+### Naive Attempt
 
 ```java
 final int N = 5
@@ -46,7 +46,7 @@ N.times {
 
 This solution _deadlocks_ because ...
 
-#### Counting Semaphore
+### Counting Semaphore
 
 ```java
 final int N = 5
@@ -77,7 +77,7 @@ N.times {
 
 I don't see a problem with this solution regarding deadlock, but could there be an issue with starvation?
 
-#### Breaking the Symmetry
+### Breaking the Symmetry
 
 ```java
 final int N = 5
@@ -111,9 +111,9 @@ N.times {
 
 ## Problem 2 - Producers/Consumers
 
-#### Introduction
+### Introduction
 
-![alt text](/images/producerConsumer.png)
+![alt text](../../images/producerConsumer.png)
 
 **Resources:** CS 511 Slides
 
@@ -129,7 +129,7 @@ The shared resource is the buffer.
 
 How can the producer and consumer do their jobs on the buffer without deadlock or starvation?
 
-#### Split Binary Semaphores
+### Split Binary Semaphores
 
 This mimicks the behavior of printing "abababababab..." with semaphores. The producer goes, then the consumer goes. Just 1 consumer and 1 producer. It's like working with a buffer of size 1.
 
@@ -153,11 +153,11 @@ Thread.start { // Cons
 }
 ```
 
-#### General Semaphores
+### General Semaphores
 
 The following solutions including this one are concerned with buffers of size n:
 
-![alt text](/images/producerConsumerBuffer.png)
+![alt text](../../images/producerConsumerBuffer.png)
 
 ```java
 Integer[] buffer = new Integer[N];
@@ -196,7 +196,7 @@ We create the behavior of having more than 1 producer and consumer by simply loo
 
 This code isn't applicable to multiple p and c because there are race conditions on adding to the buffer and this could lead to overwriting things. For example, if ther are two producers and they both get to the buffer.start = item line then they both write to the same start index. This means the 2nd producer writes over the first.
 
-#### Multiple Producers And Consumers
+### Multiple Producers And Consumers
 
 We can solve the issue from the previous solution by adding mutexes for the producer and consumer for writing and eating:
 
@@ -246,7 +246,7 @@ end = 0;
 
 ## Problem 3 - Readers/Writers
 
-#### Introduction
+### Introduction
 
 **Resources:** CS 511 Slides
 
@@ -261,7 +261,7 @@ The problem arises because mutual exclusion is too restrictive. Multiple readers
 
 How can readers and writers do their job on the buffer without deadlock and starvation?
 
-#### Solution 1 - Priority to Readers
+### Solution 1 - Priority to Readers
 
 There is only 1 semaphore. In order to write, the writer must take the semaphore and use it. When it is done the 1st reader must grab that same semaphore and then the last reader returns it.
 
@@ -291,7 +291,7 @@ Thread.start { // Reader
 
 The problem with this solution is starvation. But, if I assume a fair scheduler won't both readers and writers always get scheduled and its chill? The problem here isn't the scheduler. The problem is that if readers take the resource and a writer comes along, the writer would be blocked. And more readers come along as well. But the readers have to finish reading, so the count of readers will keep flucuating and could never reach 0.
 
-#### Solution 2 - Priority to Writers
+### Solution 2 - Priority to Writers
 
 We add our mutex's to writers as well.
 
@@ -335,12 +335,12 @@ Thread.start { // Reader
 
 The issue here is that readers may now starve.
 
-#### Solution 3 - Starvation Free
+### Solution 3 - Starvation Free
 
 I feel like the code here seemed a bit more inuintitive than solution 4. You mainly focus on resource and the queue and the queue holds the blocked threads within it and allows the fifo ordering to process the most recent object.
 
 ...
 
-#### Solution 4 - Starvation Free 2
+### Solution 4 - Starvation Free 2
 
 No need to review, just another version of a good solution it's a matter of pref to use sol3 or sol4.

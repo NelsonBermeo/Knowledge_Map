@@ -1,8 +1,10 @@
-We are going through lesson-01-model-selection from Udacity in our vibecoding folder.
+# Model Selection Example
+
+We are going through model-selection from Udacity in our vibecoding folder.
 
 Here we will use a model for processing alerts for a weather service app.
 
-The demo has a **file structure** of:
+The project has a **file structure** of:
 
 - src/
   - helpers.ts

@@ -1,10 +1,10 @@
-**Servers** in the Cloud:
+# **Servers** in the Cloud:
 
 - Servers have allowed us to scale capacity
 - Added storage, more memory, and computing power
 - No need for onsite hardware or capital expenses
 
-**Elastic Cloud Compute (EC2):**
+## **Elastic Cloud Compute (EC2):**
 
 - A service that provides servers for rent in the cloud
 - There are different pricing options for EC2:
@@ -22,28 +22,27 @@ _Example of EC2 DashBoard Information:_
 3. Images aka AMIs: Images are pre-configured templates containing an OS, application server, and software required to launch a virtual server. We can create custom AMIs, or we can use images owned by Amazon or others. We can use EC2 Image Builder for custom jobs.
 4. Elastic Block Store (EBS): Simply put, EBS is an external hard drive that we can attach to the server for additional storage. In the section we have **volumes**, **snapshots**, and the **lifescycle manager**.
 5. Network and Security:
-
-- **Security Groups** - acts as firewall rules that control traffic for EC2 instances or VPCs.
-- **Elastic IP Addresses** - static IPv4 address. In case you have a EC2 server instance failure the backup instance will spin up.
-- **Placement Group** - The EC2 instances are like VMs running on real servers in a data cetner and you can place them with different strategies like _clustered_, _partitioned_, and _spread evenly_.
-- **Key Pairs** - Our instances have public and private keys.
-- **Network Interfaces** - A network interface represents a virtual network card in a VPC
+   - **Security Groups** - acts as firewall rules that control traffic for EC2 instances or VPCs.
+   - **Elastic IP Addresses** - static IPv4 address. In case you have a EC2 server instance failure the backup instance will spin up.
+   - **Placement Group** - The EC2 instances are like VMs running on real servers in a data cetner and you can place them with different strategies like _clustered_, _partitioned_, and _spread evenly_.
+   - **Key Pairs** - Our instances have public and private keys.
+   - **Network Interfaces** - A network interface represents a virtual network card in a VPC
 
 6. **Load Balancing** - Distributes incoming traffic across multiple servers (or targets such as EC2 instances). There are 3 types of load balancers: _Application Load Balancers_, _Network Load Balancers_, _Classic Load Balancers_.
 7. **EC2 Auto Scaling**: A service that automatically launches/terminates EC2 instances based on user-defined scaling policies.
 
-#### AWS Command Line Interface
+## AWS Command Line Interface
 
 Allows you to access and control services running in your AWS account from the command line.
 
 - You could install it and configure it on your own shell
 - Or you could use the browser version: AWS CloudShell
 
-#### Creating a EC2 Instance
+## Creating a EC2 Instance
 
 You simply can launch the instance wizard and configure all the settings you need. Then you can connect to the instance.
 
-#### Elastic Block Store (EBS)
+## Elastic Block Store (EBS)
 
 EBS is a block-level storage service for EC2 instances that provides storage volumes that are attached to the EC2 instance to increase storage.
 
@@ -54,11 +53,11 @@ Benefits of using EBS are:
 - Data persists after instances are terminated
 - Automatically replicated within its avaliablity zone
 
-#### Creating a EBS Volume
+## Creating a EBS Volume
 
 We can simply navigate to the EC2 dashboard and then on the left-hand side click Volumes under the EBS section and create with specific settings.
 
-#### Security for Cloud Servers
+## Security for Cloud Servers
 
 Security in the cloud allows us to have complete control over our virtual networking enviornment. We can configure our virtual network with public or private facing subsets and launch servers in the selected netwrok to secure access.
 
@@ -70,7 +69,7 @@ Creating VPC & Internet Gateway Ex: https://www.youtube.com/watch?v=tIlcy1WYIRw&
 
 **Network Access Control Lists (ACLs)** define a set of firewall rules for controlling traffic coming in and out of subnets in the VPC.
 
-#### Compute Power in the Cloud & Lambda Functions
+## Compute Power in the Cloud & Lambda Functions
 
 Being able to run application code in the cloud without having to manage servers make development easier.
 
@@ -87,7 +86,7 @@ Creating a Lambda Function Ex: https://www.youtube.com/watch?v=MwykJta66l0
 
 Creating a Lambda Function with Triggers: https://www.youtube.com/watch?v=pGo3swI8-Vo&t=7s
 
-#### Elastic Beanstalk
+## Elastic Beanstalk
 
 **Elastic Beanstalk** is an orchestration service that allows us to deploy web applications by provisioning all of the services that we need. It can set up an EC2 instance, auto-scaling, and an elastic load balancer and many more for you.
 

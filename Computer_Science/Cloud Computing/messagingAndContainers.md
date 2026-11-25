@@ -4,7 +4,7 @@ Now that we know how to route users to our website and handle incoming traffic. 
 
 We may consider adopting a container technology, like docker, to bunlde our app to move from os to os.
 
-#### Simple Nofitcation Service (SNS)
+## Simple Nofitcation Service (SNS)
 
 Allows you to send notifcations to the users of the application. We can decouple notification logic and allows published notifications to reach many subscripters.
 
@@ -16,7 +16,7 @@ _Sending Alerts Ex:_ https://www.youtube.com/watch?v=V0u1rcRuDCU
 
 _AWS EventBridge Ex:_ https://www.youtube.com/watch?v=eLEk90aUv2A&t=26s
 
-#### Simple Queue Servce (SQS)
+## Simple Queue Servce (SQS)
 
 A fully managed message queuing service that helps decouple and scale distributed systems and microservices. With SQS we can send, store and recieve messages between application components, and SQS will duranly store messages until they are processed.
 
@@ -26,14 +26,15 @@ Imagine a course registration system where account creation must happen before c
 
 _Creating a Queue Ex:_ https://www.youtube.com/watch?v=cFn3wrrXOT0
 
-#### Containers
+## Containers
 
 A container is an OS level virtualization that allows us to run multiple isolated processes in parrallel. A container is an isolated process that consists of the following items, all bundled into one package:
 
 - the application code
 - the required dependencies
 - the necessary runtime env to run the application
-  Each container is an indepdendent component that can run on its own and be moved from enviornment to environment.
+
+Each container is an indepdendent component that can run on its own and be moved from enviornment to environment.
 
 Containers make it easier for devs to create, deploy and run applications on different hardware and platforms quickly and easily.
 

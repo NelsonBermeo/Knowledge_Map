@@ -1,6 +1,6 @@
 # Monitors
 
-#### Introduction
+## Introduction
 
 Resources: CS 511 Slides
 
@@ -11,7 +11,7 @@ However they have some **drawbacks:**
 - They are low level constructs which means it is easy to forget an acquire or release or nest them incorrectly
 - They are not related to the data which means they can appear in any part of the code
 
-#### Monitor Definition
+## Monitor Definition
 
 - Monitors are a high level abstraction that provides a convenient and effective mechanism for process synchronization
 - Monitors give us a set of operations encapsulated in modules
@@ -19,7 +19,7 @@ However they have some **drawbacks:**
 - Special variables called conidition variables are used to program conditional synchronization as well
 - Monitors make synchronization easier by associating a lock directly with an object and its methods
 
-#### Simple Monitor Example
+## Simple Monitor Example
 
 ```java
 class Counter {
@@ -66,33 +66,35 @@ The distinction with the above code and future codes are that the above code ens
 Now, we will be looking at **condition synchronization** which allows a thread to wait until a particular condition becomes true using mechanisms like wait() and notify() and etc
 We need to understand conditioning because our problems from before requires certain characteristics to be met. Like for reader/writer our readers needed to be 0 for them to let go of the semaphore.
 
-#### Condition Variable Definition
+## Condition Variable Definition
 
 Apart from the lock there are condition variables associated to the monitor.
 
 - We can have built in ones called a **wait-set**
 - And we can have user declared ones
-  Monitors have operations that allow us to control the flow of threads:
+
+Monitors have operations that allow us to control the flow of threads:
+
 - cond.wait()/await()
 - cond.notify()/signal()
 - cond.notifyAll()/signalAll()
 
-**cond.wait()/await():**
+### **cond.wait()/await():**
 
 - Always blocks the process and places it in the waiting set of the variable cond
 - When it blocks it releases the mutex on the monitor
 
-**cond.notify()/signal():**
+### **cond.notify()/signal():**
 
 - Unblocks the first process in the waiting set of the variable cond and sets it to the runnable states
 - If there are no processes in the waiting set it has no effect
 
-**cond.notifyAll()/signalAll():**
+### **cond.notifyAll()/signalAll():**
 
 - Unblocks all the processes in the waiting set of the variable cond and sets them to the runnable state
 - No effect if there are no processes in the waiting set
 
-#### Condition Variables in Action
+## Condition Variables in Action
 
 Let's work on the producer and consumer problem with condition variables and monitors.
 

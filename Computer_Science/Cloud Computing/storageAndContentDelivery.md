@@ -1,12 +1,12 @@
 # Storage And Content Delivery
 
-#### Storage in the Cloud
+## Storage in the Cloud
 
 Companies today need to collect, store and analyze data. Storage services in the cloud allow companies to store data. This provides durability, avaliability and scalability. This means no data will be lost in the cloud, data can be accessed fast and reliability, and applications in the enviornment can add or remove steadily.
 
 - There is vertical, horizontal and diagonal scaling
 
-#### S3 & Glacier
+## S3 & Glacier
 
 **Amazon Simple Storage Server (S3)** is an object storage system in the cloud for text documents, images, HTML, and more.
 
@@ -24,7 +24,7 @@ There are different S3 storage classes:
 
 _Creating a S3 Bucket Ex:_ https://www.youtube.com/watch?v=52Xq4RLH_Aw&t=3s
 
-#### DynamoDB
+## DynamoDB
 
 **DynamoDB** is a NoSQL document database with large scale.
 
@@ -32,7 +32,7 @@ _Creating a S3 Bucket Ex:_ https://www.youtube.com/watch?v=52Xq4RLH_Aw&t=3s
 
 _Creating a DynamoDB Database Ex:_ https://www.youtube.com/watch?v=gXH7J3Vzz6M&t=21s
 
-#### Relational Database Service (RDS)
+## Relational Database Service (RDS)
 
 Relational databases need to persist data for later use. **Relational Database Service (RDS)** is a service that aids in the administration of management of database such as upgrades, patching, installs, etc. RDS simply sits on top of your database and helps manage. It can mangage engines such as oracle, postgres, mariadb and more.
 
@@ -46,7 +46,7 @@ _Features_ include:
 
 _Creating a RDS Ex:_ https://www.youtube.com/watch?v=VZSmT8hLXwA
 
-#### RedShift
+## RedShift
 
 **Redshift** is a cloud data warehousing service to help companies manage big data or a large volume that needs to be analyzed.
 
@@ -60,7 +60,7 @@ It allows you to:
 
 Redshift is for **OLAP** databases for analysis.
 
-#### Content Delivery - Cloud Front
+## Content Delivery - Cloud Front
 
 **Content Delivery (CDN)** speeds up delivery of web content, pages, css, images, etc.
 

@@ -1,4 +1,4 @@
-## Application Architecture High Overview
+# Application Architecture High Overview
 
 We will dive deeper into the different concepts presented here, but our main goal in this file is to take a step back and understand the system as a whole with moving parts.
 
@@ -10,7 +10,7 @@ The **user's perspective:**
 
 A user wanting to use our application would need to communicate with the server and our server would send a response back with the JS, HTML, CSS, or something else. What if there are so users that want to interact with our server? We would need to scale our server!
 
-**Scaling our Server:**
+## **Scaling our Server:**
 
 We could add more RAM or upgrade the CPU with more cores and higher clocking speed. However, every computer has a ceiling in terms of upgrades. Upgrading components within the same computer is refferred to as **vertical scaling**.
 

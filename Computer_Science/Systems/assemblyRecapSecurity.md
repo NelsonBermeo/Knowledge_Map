@@ -1,4 +1,6 @@
-#### Introduction 
+# Assembly Recap for Security
+
+## Introduction
 
 Assembly is a low-level programming language where instructions correspond closely to operations executed by the CPU. 
 
@@ -8,7 +10,7 @@ It is similar to ARM but has some quirks due to its history.
 
 Unlike higher level programming languages, we don't work with named variables such as x or y. Instead we work with registers and memory. 
 
-#### Registers 
+## Registers
 
 Registers are tiny, extremely fast storage locations inside the CPU. 
 
@@ -37,7 +39,7 @@ The order goes like:
 - r9 
 - And the rest are stored on the stack 
 
-#### Assembly Instructions 
+## Assembly Instructions
 
 The format of instructions are: 
 (instruction) (destination), (source)
@@ -46,7 +48,7 @@ The format of instructions are:
 - mov : copy data : mov rax, 5 
 - add : addition : add rax, 3 
 
-#### The Stack 
+## The Stack
 
 The stack is a region of memory commonly used for function calls, local variables, and temporarily saving data 
 

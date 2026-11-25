@@ -1,8 +1,10 @@
-#### Introduction
+# OOP Fundamentals
+
+## Introduction
 
 OOP is a programming paradigm that organizes software around objects rather than functions and logic. An object contains both data (attributes) and methods (behavior) making programs more modular, reusable and easier to understand and manage.
 
-#### Classes
+## Classes
 
 A class is a blueprint or template used to create objects. It defines the properties/attributes/data objects are represented as and the methods they can perform.
 
@@ -10,13 +12,13 @@ A class does not occupy memory until an object is created.
 
 A Car represents a class while a BMW could be an object created from that class.
 
-#### Objects
+## Objects
 
 An object is an instance of a class. It represents a real-world entity and can access the properties and methods defined in a class.
 
 Occupies memory when created.
 
-#### Encapsulation
+## Encapsulation
 
 Encapsulation is the process of binding data and methods together into a single unit and restricting direct access to data using access modifiers.
 
@@ -36,7 +38,7 @@ class Employee:
         return self.__salary
 ```
 
-#### Abstraction
+## Abstraction
 
 Abstraction hides implementation details and shows only the essential features of an object.
 
@@ -52,7 +54,7 @@ Improves code simplicity, and achieved using abstract classes and interfaces.
 
 Ex: An ATM machine is like an example of a real world abstraction where a user interacts with simple operations on the screen while internal working and implementation details remain hidden.
 
-#### Inheritance
+## Inheritance
 
 Allows one class to acquire the properties and methods of another class.
 
@@ -76,7 +78,7 @@ dog.sound()
 dog.bark() # the child inheritted the parents sound method
 ```
 
-#### Polymorphism
+## Polymorphism
 
 The term itself means "many forms" and in OOP is allows the same method or interface to perform different actions depending on how the object invokes it. This feature improves flexability in applications.
 

@@ -7,6 +7,7 @@
 #### Stevens Institute of Technology - CS 511 - Concurrent Programming
 
 **Date:** Fall 2026
+
 **Description:** In Progress...
 
 ## Assignments

@@ -1,4 +1,6 @@
-#### C Programs
+# Systems Recap for Security
+
+## C Programs
 
 To go from a C program to execution:
 
@@ -13,7 +15,7 @@ The **operating system** determines the executable format, libraries, avaliable 
 
 In CS 396 we will be using 64-bit x86 (aka x86_64) and Linux.
 
-#### Executable and Linkable Format (ELF)
+## Executable and Linkable Format (ELF)
 
 Linux uses ELF binary files for executables.
 
@@ -31,7 +33,7 @@ Section Header Table: Groups code and data into linkable sections that linker ne
 
 [Insert Linux executable walkthrough]
 
-#### Program Memory
+## Program Memory
 
 Sections:
 
@@ -56,7 +58,7 @@ Let's look at an example of where certain things are located in program memory b
 - And other variables such as j are local and on the stack
 - Then of course the code itself is in text
 
-#### Stack Frame
+## Stack Frame
 
 During execution, each function gets its own stack frame which contains:
 
@@ -67,7 +69,7 @@ During execution, each function gets its own stack frame which contains:
 
 The exact format of the stack frame depends on the system's calling convention.
 
-Note: There is an epilogue and prologue when we call functions and below our prologue is pushing the base pregister to the stack (frame pointer rbp) ; the epilogue is ... 
+Note: There is an epilogue and prologue when we call functions and below our prologue is pushing the base pregister to the stack (frame pointer rbp) ; the epilogue is ...
 
 Let's take a look at an example of a stack frame:
 
@@ -107,7 +109,7 @@ What is the blue section?
 
 Still a bit confused? Don't worry lets get into another more dynamic example...
 
-#### Stack Frame Ex 2
+## Stack Frame Ex 2
 
 ![alt text](../../images/stackFrameSumEx.png)
 
@@ -128,7 +130,7 @@ Our first arguments are stored in rdi, rsi, and rdx.
 
 - rdi is an address pointing to buf and rsi and rdx holds numbers
 
-![alt text](image.png)
+![alt text](stackFrameSumEx3.png)
 
 Step 3: Save return address and call sum_range()
 

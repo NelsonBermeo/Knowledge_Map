@@ -1,4 +1,6 @@
-#### System Defenses
+# Defenses
+
+## System Defenses
 
 There are a number of features that your operating system has to defend against memory vulnerability exploits:
 
@@ -13,7 +15,7 @@ There is also **address space layout randomization (ASLR)**.
 
 Essentially, attackers need to determine instruction addresses at runtime for precise control-flow hijacking. But the OS makes this more difficult by randomizing the location of program memory sections at runtime.
 
-#### Compiler Defenses
+## Compiler Defenses
 
 Some protections can be compiled into the binary itself. **Stack canaries** and **point authentication codes** are 2 ways to prevent hijacking that can be automatically added by the compler itself.
 
